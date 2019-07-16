@@ -19,7 +19,8 @@ passlist = [
 
 cmdlist = [
 	"search",
-	"file"
+	"file",
+	"sign out"
 ]
 
 filelist = [
@@ -46,10 +47,10 @@ while True:
 			fileget = raw_input("which file do you want?")
 			if fileget == "the file":
 				print("this is the file you want: https://bit.ly/30xnnog")
-			if cmd == "fileB56"
+			if fileget == "fileB56":
 				time.sleep(3)
 				print("Here you go: https://bit.ly/2y1Yzc7")
-			if fileget == "WT_"
+			if fileget == "WT_":
 				time.sleep(3)
 				print("Here you go: https://bit.ly/2KcFV54")
 		else:
@@ -59,10 +60,14 @@ while True:
 			result = raw_input("what do you want to search?")
 			if result == "The Creator":
 				print("My Creator is a person that which you got this code from")
-			if result =="fortnite"
+			if result =="fortnite":
 				print("Nah Fam")
 		else:
 			print("I am sorry I do not know that. If you want something different go here: https://google.com")
-
+		#how to exit/stop program
+		if cmd == "sign out":
+			conformation = raw_input("Are you sure?(y/n)")
+			if conformation == "y":
+				break
 	else:
 		print("Incorrect")
