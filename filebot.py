@@ -26,14 +26,13 @@ while True:
 	username = raw_input("Username:")
 	password = raw_input("Password:")
 
-	if username == user_list[0] or username == user_list[1] or username == user_list[2]:
-		if password == passlist[0] or password == passlist[1] or password == passlist[2]:
-			print("Welcome " + username + " please enter a command")
-			print(cmdlist)
-			cmd = raw_input("Which command?")
-			if cmd == "search" or "file":
-				fileget = raw_input("which file do you want?")
-				if fileget == "a file":
-					print("this is the file you want: https://bit.ly/30xnnog")
+	if username in user_list and password in passlist:
+		print("Welcome " + username + " please enter a command")
+		print(cmdlist)
+		cmd = raw_input("Which command?")
+		if cmd == "search" or "file":
+			fileget = raw_input("which file do you want?")
+			if fileget == "the file":
+				print("this is the file you want: https://bit.ly/30xnnog")
 	else:
 		print("Incorrect")
