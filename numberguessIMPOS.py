@@ -26,5 +26,5 @@ while True:
 	elif count == 3:
 		print("You lost")
 	else:
-		print("you broke it! :(")
+		print("you broke it! :( the number was" + number)
 		count += 1
