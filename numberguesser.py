@@ -11,11 +11,12 @@ max = int(input("What is the highest value?"))
 
 count = 0
 while True:
-	number = random.randiant(min, max)
+	number = random.randint(min, max)
 	guess = int(input("guess a number?"))
 	time.sleep(3)
 	if guess == number:
 		print("Yay you won!")
+		break
 	elif guess > number:
 		print("You won, just kidding, you should have found a better way to waste your time until you eventually die.")
 		count += 1
